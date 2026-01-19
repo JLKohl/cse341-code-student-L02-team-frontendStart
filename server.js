@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors()); 
 app.use(bodyParser.json())
-app.use(express.static(__dirname + '/../frontend'));
+app.use(express.static(__dirname + '/frontend'));
 
 
 app.use('/professional', professionalRoutes);
