@@ -1,0 +1,27 @@
+# Get professional data
+GET http://localhost:8080/professional
+Accept: application/json
+
+###
+
+# Get all contacts
+GET http://localhost:8080/contacts
+Accept: application/json
+
+###
+
+#Get first contact
+GET http://localhost:8080/contacts/696d772825659732c8b37dbb
+Accept: application/json
+
+###
+
+#Get second contact
+GET http://localhost:8080/contacts/696d772825659732c8b37dbc
+Accept: application/json
+
+###
+
+#Get third contact
+GET http://localhost:8080/contacts/696d772825659732c8b37dbd
+Accept: application/json
