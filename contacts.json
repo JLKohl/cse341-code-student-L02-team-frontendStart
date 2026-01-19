@@ -1,11 +1,26 @@
 [
     {
-        "firstName"
+        "firstName" : "Jason",
+        "lastName" : "Kohl",
+        "email" : "jasonisawesom@email.com",
+        "favoriteColor" : "BYU Blue",
+        "birthday" : "02-28-86"
     },
-    {
 
+    {
+        "firstName" : "Joseph",
+        "lastName" : "Kohl",
+        "email" : "jospheiscool@email.com",
+        "favoriteColor" : "BYU Blue",
+        "birthday" : "06-11-21"
     },
-    {
 
+    {
+        "firstName" : "Eleanor",
+        "lastName" : "Kohl",
+        "email" : "eleanorissoamazing@email.com",
+        "favoriteColor" : "Hamilton Brown",
+        "birthday" : "12-07-41"
     }
+
 ]
