@@ -25,3 +25,38 @@ Accept: application/json
 #Get third contact
 GET http://localhost:8080/contacts/696d772825659732c8b37dbd
 Accept: application/json
+
+###
+
+#insert contact
+POST http://localhost:8080/contacts/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstName": "Gabriel",
+    "lastName" : "Kohl",
+    "email" : "anemail@email.com",
+    "favoriteColor" : "Green",
+    "birthday" : "04/14/13"
+}
+
+###
+
+#edit contact
+PUT http://localhost:8080/contacts/696d772825659732c8b37dbb
+Content-Type: application/json
+Accept: application/json
+
+{
+
+    "favoriteColor" : "BYU Blue"
+}
+
+###
+
+#edit contact
+DELETE http://localhost:8080/contacts/697551bc64a0bf6eba6e6194
+Accept: application/json
+
+
