@@ -50,7 +50,7 @@ const editContact = async (req, res) => {
   { $set: updates });
 
   if (response.acknowledged) {
-    res.status(201).json(response);
+    res.status(204).json(response);
   } else {
     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
@@ -63,7 +63,7 @@ const deleteContact = async (req, res) => {
   const response = await mongodb.getDb().db().collection('Contacts').deleteOne({ _id: new ObjectId(contactId) });
 
   if (response.acknowledged) {
-    res.status(201).json(response);
+    res.status(200).json(response);
   } else {
     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
