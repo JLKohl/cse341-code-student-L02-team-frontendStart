@@ -8,7 +8,6 @@ const getAllContacts = async (req, res, next) => {
   res.status(200).json(result);
 };
 
-// contactsController.js
 const getContactById = async (req, res) => {
   try {
     const db = require('../db/connect').getDb().db('Test');
@@ -43,16 +42,20 @@ const newContact = async (req, res) => {
 
 const editContact = async (req, res) => {
 
+  console.log('EDIT CONTACT HIT');
+  console.log('ID:', req.params.id);
+  console.log('BODY:', req.body);
+
   const contactId = req.params.id;
   const updates = req.body;
 
   const response = await mongodb.getDb().db().collection('Contacts').updateOne({ _id: new ObjectId(contactId) },
   { $set: updates });
 
-  if (response.acknowledged) {
-    res.status(204).json(response);
+  if (response.modifiedCount > 0) {
+    res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
   }
 }
 

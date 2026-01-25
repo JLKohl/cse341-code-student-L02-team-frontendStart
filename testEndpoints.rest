@@ -50,13 +50,14 @@ Accept: application/json
 
 {
 
-    "favoriteColor" : "BYU Blue"
+    "favoriteColor" : "yellow"
 }
 
 ###
 
 #edit contact
-DELETE http://localhost:8080/contacts/697551bc64a0bf6eba6e6194
+DELETE http://localhost:8080/contacts/6975616f3bb61958d3b10989
+
 Accept: application/json
 
 
