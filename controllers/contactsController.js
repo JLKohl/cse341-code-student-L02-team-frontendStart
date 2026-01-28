@@ -3,9 +3,14 @@ const ObjectId = require('mongodb').ObjectId;
 
 
 const getAllContacts = async (req, res, next) => {
-  const db = mongodb.getDb().db('Test');
-  const result = await db.collection('Contacts').find().toArray();
-  res.status(200).json(result);
+  try {
+    const db = mongodb.getDb().db('Test');
+    const result = await db.collection('Contacts').find().toArray();
+    res.status(200).json(result);
+  } catch (err) {
+    res.status(500).json({ error: 'Something went wrong' });
+  }
+
 };
 
 const getContactById = async (req, res) => {

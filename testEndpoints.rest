@@ -56,7 +56,7 @@ Accept: application/json
 ###
 
 #edit contact
-DELETE http://localhost:8080/contacts/6975616f3bb61958d3b10989
+DELETE http://localhost:8080/contacts/69756d255bd22e7b85800d73
 
 Accept: application/json
 
