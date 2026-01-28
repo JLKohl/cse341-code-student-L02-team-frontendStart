@@ -8,7 +8,7 @@
         "description": "API documentation for the Contacts project"
     },
     "paths": {
-        "/contacts/" : {
+        "/contacts" : {
             "get" : {
                 "summary": "get all contacts",
                 "description": "Gets all the contacts",
@@ -136,7 +136,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Contact updated successfully deleted"
+                        "description": "Contact successfully deleted"
                     },
                     "500": {
                         "description": "Server error"
